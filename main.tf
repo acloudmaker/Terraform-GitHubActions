@@ -19,8 +19,13 @@ module "website_s3_bucket" {
 
 terraform {
   required_providers {
-    aws = {
       source = "hashicorp/aws"
+    }
+  }
+  backend "remote" {
+    organization = "JDL-training"
+    workspaces {
+      name = "terraform-automation-with-github-actions"
     }
   }
 }
