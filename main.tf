@@ -12,17 +12,20 @@ terraform {
   required_version = "~> 0.14"
 
   backend "remote" {
+
     organization = "JDL-training"
 
     workspaces {
       name = "terraform-automation-with-github-actions"
     }
+
   }
+
 }
 
 
 provider "aws" {
-  region = "us-west-2"
+  region = "us-west-1"
 }
 
 
