@@ -5,7 +5,7 @@
 module "website_s3_bucket" {
   source = "./modules/aws-s3-static-website-bucket"
 
-  bucket_name = "jdl-terraform-bucket-04232021"
+  bucket_name = "jdl-terraform-bucket-04292021"
 
   tags = {
     Terraform   = "true"
