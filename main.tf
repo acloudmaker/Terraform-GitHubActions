@@ -12,15 +12,11 @@ terraform {
   required_version = "~> 0.14"
 
   backend "remote" {
-
     organization = "JDL-training"
-
     workspaces {
       name = "terraform-automation-with-github-actions"
     }
-
   }
-
 }
 
 
